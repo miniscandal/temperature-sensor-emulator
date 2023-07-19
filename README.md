@@ -7,10 +7,24 @@ etapa de desarrollo.
 
 ≧◠‿◠≦
 
-1. Instala Python 3.11 y PIP como herramienta de línea de comandos.
-2. Conocimientos en entornos virtuales para Python.
-3. Manejo de terminal y línea de comandos.
-4. Requieres del siguiente repositorio
+1. Manejo de terminal y línea de comandos.
+2. Instala Eclipse Mosquitto.
+3. Crea un archivo mosquitto.conf en la ruta C:\ con la siguiente configuración.
+   ```
+   listener 1883
+   protocol  mqtt
+
+   listener 8080
+   protocol websockets
+
+   allow_anonymous true
+   ```
+4. Abre una terminal en la carpeta de istalación.
+5. Ejecuta el comando `./mosquitto.exe -c C:\mosquitto.conf -v` para  
+   iniciar el broker.
+6. Instala Python 3.11 y PIP como herramienta de línea de comandos.
+7. Conocimientos en entornos virtuales para Python.
+8. Requieres del siguiente repositorio
    [sensor-monitoring](https://github.com/miniscandal/sensor-monitoring) como aplicación web para  
    monitoreo en tiempo real.
 
@@ -33,10 +47,11 @@ etapa de desarrollo.
 <img src="./docs/pictures/terminal-capture-01-min.png" width="540">
 
 ## Tecnologías
+![Terminal](https://img.shields.io/badge/Terminal-%23474745.svg?style=for-the-badge)
 ![Python](https://img.shields.io/badge/Python-%233776AB.svg?style=for-the-badge&logo=python&logoColor=white)
-![Terminal](https://img.shields.io/badge/Terminal-%23000000.svg?style=for-the-badge)
 ![Mosquitto](https://img.shields.io/badge/Mosquitto-%233C5280.svg?style=for-the-badge)
 ![MQTT](https://img.shields.io/badge/MQTT-%23007ACC.svg?style=for-the-badge&logo=MQTT&logoColor=white)
+![JSON](https://img.shields.io/badge/JSON-%2348494a.svg?style=for-the-badge)
 
 ## Aprendizajes
 
